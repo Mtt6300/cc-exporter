@@ -1,0 +1,7 @@
+grafana
+.venv
+.vscode
+prometheus
+docker-compose.yaml
+.env
+test.json
