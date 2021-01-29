@@ -24,6 +24,23 @@ For Customization you need to change these envs in `cc-exporter` service from `d
 *Note*: You should find the correct `coin id` from CoinCap public api. (link: https://api.coincap.io/v2/assets)
 
 
+# Install with Helm
+You can install cc-exporter with Helm.
+Fist need to add chart repo:
+
+```bash
+$ helm repo add mtt6300 https://mtt6300.github.io/charts/
+$ helm repo update
+```
+Than install cc-exporter by default configurations:
+
+`$ helm install cc-exporter mtt6300/cc-exporter`
+
+Or
+
+`$ helm install cc-exporter mtt6300/cc-exporter --set config.INTERVAL=50 --set config.APP_PORT=5000 --set config.COINCAPURL=https://api.coincap.io/v2/assets --set config.CRYPTOS=ethereum,bitcoin,xrp,binance-coin,stellar`
+
+
 # Dashboard
 Grafana dhasboard page: https://grafana.com/grafana/dashboards/13791
 
