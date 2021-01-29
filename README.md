@@ -8,7 +8,7 @@ $ git clone https://github.com/Mtt6300/cc-exporter
 $ cd cc-exporter
 $ docker-compose up -d
 ```
-Now you should be able to visit grafana dashboard on `http://localhost:3000`
+Now you should be able to visit Grafana dashboard on `http://localhost:3000`
 
 *Note*: By default user and password is `admin`.
 
@@ -23,6 +23,11 @@ For Customization you need to change these envs in `cc-exporter` service from `d
 
 *Note*: You should find the correct `coin id` from CoinCap public api. (link: https://api.coincap.io/v2/assets)
 
+
+# Dashboard
+Grafana dhasboard page: https://grafana.com/grafana/dashboards/13791
+
+[![Foo](https://grafana.com/api/dashboards/13791/images/9799/image)](https://grafana.com/grafana/dashboards/13791)
 
 # Contributing , idea ,issue
 Feel free to fill an issue or create a pull request, I'll check it ASAP
